@@ -13,8 +13,8 @@ export const App = () => {
       movie.description.toLowerCase().includes(lowerQuery),
   );
 
-  const updateQuery = event => {
-    setQuery(event.target.value.trim());
+  const updateQuery = (changeEvent) => {
+    setQuery(changeEvent.target.value.trim());
   };
 
   return (
